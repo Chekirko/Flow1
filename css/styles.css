@@ -1,0 +1,109 @@
+/* background: rgba(48, 48, 48, 1);
+background: rgba(255, 255, 255, 1);
+background: rgba(157, 164, 189, 1);
+background: rgba(255, 108, 0, 1);
+background: rgba(157, 164, 189, 0,12);
+background: rgba(157, 164, 189, 0,6);
+background: rgba(247, 247, 247, 1);
+background: rgba(157, 164, 189, 0,4);
+background: rgba(85, 85, 85, 1);
+background: rgba(0, 0, 0, 1);
+background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+background: rgba(17, 19, 25, 1);
+background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+background: rgba(25, 28, 38, 1);
+background: rgba(25, 28, 38, 0,2); */
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.phone-link {
+  text-transform: uppercase;
+}
+
+/* Секция Герой */
+
+.hero-social {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #ff6c00;
+}
+
+.second-link {
+  color: #303030;
+}
+
+.linetext {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.snd-link {
+  text-align: right;
+  color: #ffffff;
+}

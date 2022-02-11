@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <a href="./"><img src="./images/Logo.svg" alt="Логотип"></a>
+    <header class="header">
+        <a href="./"><img src="./images/Logo.svg" alt="Логотип" width="68" height="55"></a>
 
         <nav>
-            <ul>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Услуги и цены</a></li>
-                <li><a href="">Мастера</a></li>
-                <li><a href="">Контакты</a></li>
+            <ul class="site-nav list">
+                <li><a class="nav-link" href="">О нас</a></li>
+                <li><a class="nav-link" href="">Услуги и цены</a></li>
+                <li><a class="nav-link" href="">Мастера</a></li>
+                <li><a class="nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
 
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">онлайн-запись</button><a href=""></a>
+        <a class="phone-link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="btn" type="button">онлайн-запись</button><a href=""></a>
     </header>
     <main>
 
         <!-- Секция Герой -->
-        <section>
+        <section class="section hero">
             <ul>
-                <li><a href="">Youtube</a></li>
-                <li><a href="">Instagram</a></li>
+                <li><a class="hero-social first-link" href="">Youtube</a></li>
+                <li><a class="hero-social second-link" href="">Instagram</a></li>
             </ul>
 
-            <p>A hair salon for men in Kyiv</p>
+            <p class="linetext">A hair salon for men in Kyiv</p>
 
-            <h1>BarberShop</h1>
+            <h1 class="hero-title">BarberShop</h1>
 
-            <p>Мы эксперты в модных мужских стрижках.
+            <p class="text">Мы эксперты в модных мужских стрижках.
                 Работаем быстро, осторожно и со вкусом.</p>
 
-            <ul>
-                <li><a href="">Назад</a></li>
-                <li><a href=""></a>Вперед</li>
+            <ul class="hero-links list">
+                <li><a class="hero-link fst-link" href="">Назад</a></li>
+                <li><a class="hero-link snd-link" href="">Вперед</a></li>
             </ul>
         </section>
 
