@@ -47,7 +47,8 @@ body {
   color: #ffffff;
 }
 
-.header {
+.nav-link,
+.phone-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -75,15 +76,21 @@ body {
   color: #303030;
 }
 
-.linetext {
+.uppertitle {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
 
+.uppertitle-dark-mode {
   color: rgba(157, 164, 189, 0.6);
+}
+
+.uppertitle-mode-light {
+  color: #303030;
 }
 
 .hero-title {
@@ -96,6 +103,14 @@ body {
   letter-spacing: 0.05em;
 
   color: #ffffff;
+}
+
+.subtitle-mode-dark {
+  color: #9da4bd;
+}
+
+.subtitle-mode-light {
+  color: #555555;
 }
 
 .hero-link {
@@ -114,24 +129,20 @@ body {
 
 /* Секция About */
 
-.about-uppertitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #303030;
-}
-
-.about-title {
+.title {
   font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+}
 
+.title-mode-light {
   color: #303030;
+}
+
+.title-mode-dark {
+  color: #ffffff;
 }
 
 .about-subtitle {
@@ -146,26 +157,6 @@ body {
 
 .about-btn {
   color: #303030;
-}
-
-.price-uppertitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: rgba(157, 164, 189, 0.6);
-}
-
-.price-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.178;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
 }
 
 .advantages-quantity {
@@ -187,48 +178,8 @@ body {
   color: #303030;
 }
 
-.advantages-uppertitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #303030;
-}
-
-.advantages-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-
-  color: #303030;
-}
-
 .advantages-text {
   color: #555555;
-}
-
-.masters-uppertitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #303030;
-}
-
-.masters-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1/17;
-  letter-spacing: 0.05em;
-
-  color: #303030;
 }
 
 .masters-name {
@@ -246,12 +197,22 @@ body {
   color: #ff6c00;
 }
 
-.gallery-uppertitle {
+.contacts-link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.contacts-uppertitle {
+  color: #ffffff;
+}
+
+.footer-text,
+.footer-link {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #303030;
+  line-height: 1.37;
 }
