@@ -14,15 +14,55 @@ background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 background: rgba(25, 28, 38, 1);
 background: rgba(25, 28, 38, 0,2); */
 
+:root {
+  /* Основные шрифты */
+  --main-font: Open Sans, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --accent-color: #ff6c00;
+
+  /* Светлая тема текста */
+  --primary-txt--mode-light: #303030;
+  --secondary-txt--mode-light: #555555;
+  --main-txt--mode-light: #555555;
+
+  /* Темная тема текста */
+  --primary-txt--mode-dark: #ffffff;
+  --secondary-txt--mode-dark: rgba(157, 164, 189, 0.6);
+  --main-txt--mode-dark: #9da4bd;
+
+  /* Светлая тема фона */
+  --primary-bg--mode-light: #ffffff;
+  --secondary-bg--mode-light: #f7f7f7;
+
+  /* Темная тема фона */
+  --primary-bg--mode-dark: #191c26;
+}
+
 body {
-  font-family: Open Sans, sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 
-  color: #9da4bd;
+  color: var(--main-txt--mode-light);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
 }
 
 .list {
@@ -33,8 +73,31 @@ body {
   text-decoration: none;
 }
 
-.btn {
-  border: 1px solid #ff6c00;
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-btn {
+  width: 160px;
+  height: 40px;
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
   cursor: pointer;
 
@@ -43,176 +106,187 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-
-  color: #ffffff;
 }
 
-.nav-link,
-.phone-link {
+.main-btn--mode-dark {
+  color: var(--primary-txt--mode-dark);
+}
+
+.main-btn--mode-light {
+  color: var(--primary-txt--mode-light);
+}
+
+.uppertitle {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.uppertitle--mode-light {
+  color: var(--primary-txt--mode-light);
+}
+
+.uppertitle--mode-dark {
+  color: var(--secondary-txt--mode-dark);
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
+.title--mode-light {
+  color: var(--primary-txt--mode-light);
+}
+
+.title--mode-dark {
+  color: var(--primary-txt--mode-dark);
+}
+
+.subtitle--mode-light {
+  color: var(--secondary-txt--mode-light);
+}
+
+.subtitle--mode-dark {
+  color: var(--main-txt--mode-dark);
+}
+
+/* Хэдер */
+
+.site-nav__link,
+.header__phone {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
 
-  color: #ffffff;
+  color: var(--primary-txt--mode-dark);
 }
 
-.phone-link {
+.header__phone {
   text-transform: uppercase;
 }
 
 /* Секция Герой */
 
-.hero-social {
+.public-list__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
 
-  color: #ff6c00;
+  color: var(--primary-txt--mode-light);
 }
 
-.second-link {
-  color: #303030;
-}
-
-.uppertitle {
-  margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.uppertitle-dark-mode {
-  color: rgba(157, 164, 189, 0.6);
-}
-
-.uppertitle-mode-light {
-  color: #303030;
-}
-
-.hero-title {
-  margin-bottom: 20px;
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
+.hero__title {
   font-size: 72px;
   line-height: 1.18;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
 }
 
-.subtitle-mode-dark {
-  color: #9da4bd;
-}
-
-.subtitle-mode-light {
-  color: #555555;
-}
-
-.hero-link {
+.hero__btnk {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
-
-  color: rgba(157, 164, 189, 0.6);
-}
-
-.snd-link {
   text-align: right;
-  color: #ffffff;
+
+  color: var(--primary-txt--mode-dark);
 }
 
-/* Секция About */
-
-.title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
+.hero__btn--disable {
+  color: var(--secondary-txt--mode-dark);
 }
 
-.title-mode-light {
-  color: #303030;
-}
+/* Секция О нас */
 
-.title-mode-dark {
-  color: #ffffff;
-}
-
-.about-subtitle {
-  color: #555555;
-}
-.about-text {
+.about__text {
   font-size: 14px;
   line-height: 1.86;
-
-  color: #555555;
 }
 
-.about-btn {
-  color: #303030;
+/* Секция Услуги и цены */
+
+.price__inner-name,
+.price__inner-cost {
+  color: var(--main-txt--mode-dark);
 }
 
-.advantages-quantity {
+.advantages__quantity {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
 
-  color: #303030;
+  color: var(--primary-txt--mode-light);
 }
 
-.advantages-descr {
+.advantages__descr {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
 
-  color: #303030;
+  color: var(--primary-txt--mode-light);
 }
 
-.advantages-text {
-  color: #555555;
-}
+/* Секция Мастера */
 
-.masters-name {
+.team__name {
   line-height: 1.39;
   text-align: center;
 
-  color: #303030;
+  color: var(--primary-txt--mode-light);
 }
 
-.masters-text {
+.team__pos {
   font-size: 14px;
   line-height: 1.36;
   text-align: center;
 
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
-.contacts-link {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+/* Секция Галерея */
 
-  color: #9da4bd;
+/* Секция Контакты */
+
+.contacts__link,
+.contacts__address,
+.contacts__schedule {
+  color: var(--main-txt--mode-dark);
 }
 
-.contacts-uppertitle {
-  color: #ffffff;
+.contacts__address {
+  font-style: normal;
 }
 
-.footer-text,
-.footer-link {
+.uppertitle--white {
+  color: var(--primary-txt--mode-dark);
+}
+
+/* Секция Футер */
+
+.footer__text,
+.footer__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
+}
+
+.footer__text {
+  color: var(--main-txt--mode-dark);
+}
+
+.footer__link {
+  color: var(--primary-txt--mode-light);
 }
