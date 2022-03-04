@@ -162,6 +162,30 @@ img {
 
 /* Хэдер */
 
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--primary-bg--mode-dark);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
+  margin-right: 70px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__link:not(last-child) {
+  margin-right: 40px;
+}
+
 .site-nav__link,
 .header__phone {
   font-weight: 600;
@@ -172,7 +196,14 @@ img {
   color: var(--primary-txt--mode-dark);
 }
 
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .header__phone {
+  margin-right: 40px;
   text-transform: uppercase;
 }
 
