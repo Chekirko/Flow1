@@ -25,10 +25,10 @@
 
             <nav class="header__nav">
                 <ul class="site-nav list">
-                    <li><a class="site-nav__link link" href="">О нас</a></li>
-                    <li><a class="site-nav__link link" href="">Услуги и цены</a></li>
-                    <li><a class="site-nav__link link" href="">Мастера</a></li>
-                    <li><a class="site-nav__link link" href="">Контакты</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link link" href="">О нас</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link link" href="">Услуги и цены</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link link" href="">Мастера</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
 
@@ -45,8 +45,8 @@
         <section class="hero">
             <div class="container">
                 <ul class="public-list list">
-                    <li class="public-list__item"><a class="public-list__link" href="">Youtube</a></li>
-                    <li class="public-list__item"><a class="public-list__link" href="">Instagram</a>
+                    <li class="public-list__item"><a class="public-list__link link" href="">Youtube</a></li>
+                    <li class="public-list__item"><a class="public-list__link link" href="">Instagram</a>
                     </li>
                 </ul>
 
@@ -67,26 +67,29 @@
 
         <!-- Секция О нас -->
         <section class="about section">
-            <div class="container">
+            <div class="about__container container">
                 <ul class="about__list list">
-                    <li class="about__item"><img src="./images/img1.jpg" alt="" width="270" height="445"></li>
-                    <li class="about__item"><img src="./images/img2.jpg" alt="" width="270" height="445"></li>
+                    <li class="about__item"><img class="about__img" src="./images/img1.jpg" alt="" width="270"
+                            height="445"></li>
+                    <li class=" about__item"><img src="./images/img2.jpg" alt="" width="270" height="445"></li>
                 </ul>
 
-                <p class="uppertitle uppertitle--mode-light">О НАС</p>
+                <div class="about__wrapper">
+                    <p class="uppertitle uppertitle--mode-light">О НАС</p>
 
-                <h2 class="title title--mode-light">Лучший Барбершоп твоего города</h2>
+                    <h2 class="title title--mode-light">Лучший Барбершоп твоего города</h2>
 
-                <h3 class="subtitle subtitle--mode-light">Если ты хочешь добавить в свой образ больше уверенности – тебе
-                    точно
-                    к нам.</h3>
+                    <h3 class="about__subtitle subtitle subtitle--mode-light">Если ты хочешь добавить в свой образ
+                        больше уверенности –
+                        тебе точно к нам.</h3>
 
-                <p class="about__text">Мы команда, которая никогда не останавливается на достигнутом
-                    и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
-                    Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    <p class="about__text">Мы команда, которая никогда не останавливается на достигнутом
+                        и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
+                        Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
 
-                <button class="main-btn main-btn--mode-light" type="button">онлайн-запись</button>
+                    <button class="main-btn main-btn--mode-light" type="button">онлайн-запись</button>
+                </div>
             </div>
         </section>
 
@@ -95,7 +98,7 @@
             <div class="container">
                 <p class="uppertitle uppertitle--mode-dark">Проведи время в компании лучших мастеров</p>
 
-                <h2 class="title title--mode-dark">Услуги и цены</h2>
+                <h2 class="price__title title title--mode-dark">Услуги и цены</h2>
 
                 <ul class="price__list list">
                     <li class="price__item">
@@ -140,13 +143,15 @@
                         </ul>
                     </li>
 
-                    <button class="main-btn main-btn--mode-dark" type="button">онлайн-запись</button>
+                </ul>
+
+                <button class="main-btn price__btn main-btn--mode-dark" type="button">онлайн-запись</button>
             </div>
         </section>
 
         <!-- Секция Преимущества -->
         <section class="advantages section">
-            <div class="container">
+            <div class="advantages__container container">
                 <ul class="advantages__list list">
                     <li class="advantages__item">
                         <p class="advantages__quantity">600</p>
@@ -166,13 +171,15 @@
                     </li>
                 </ul>
 
-                <p class="uppertitle uppertitle--mode-light">старая традиционная школа</p>
+                <div class="advantages__wrapper">
+                    <p class="uppertitle uppertitle--mode-light">старая традиционная школа</p>
 
-                <h2 class="title title--mode-light">Почему приходят именно к нам?</h2>
+                    <h2 class="title title--mode-light">Почему приходят именно к нам?</h2>
 
-                <p class="subtitle subtitle--mode-light">О нас говорят только хорошее. Но лучше 1 раз увидеть и
-                    прочувствовать, чем 10 раз прочитать.
-                </p>
+                    <p class="subtitle subtitle--mode-light">О нас говорят только хорошее. Но лучше 1 раз увидеть и
+                        прочувствовать, чем 10 раз прочитать.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -181,7 +188,7 @@
             <div class="container">
                 <p class="uppertitle uppertitle--mode-light">для настоящих ценителей атмосферы</p>
 
-                <h2 class="title title--mode-light">Наши мастера</h2>
+                <h2 class="title team__title title--mode-light">Наши мастера</h2>
 
                 <ul class="team__list list">
                     <li class="team__member">
@@ -190,10 +197,18 @@
                         <h3 class="team__name">John Smith</h3>
                         <p class="team__pos" lang="en">Extreme Barber</p>
                         <ul class="socials list">
-                            <li class="socials__item"><a class="socials__link" href="">instagram</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">twitter</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">facebook</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">linkedin</a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#instagram1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#twitter1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#facebook1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#linkedin1"></use>
+                                    </svg></a></li>
                         </ul>
                     </li>
 
@@ -202,10 +217,18 @@
                         <h3 class="team__name">Michele Doe</h3>
                         <p class="team__pos" lang="en">Extreme Barber</p>
                         <ul class="socials list">
-                            <li class="socials__item"><a class="socials__link" href="">instagram</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">twitter</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">facebook</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">linkedin</a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#instagram1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#twitter1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#facebook1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#linkedin1"></use>
+                                    </svg></a></li>
                         </ul>
                     </li>
 
@@ -214,10 +237,18 @@
                         <h3 class="team__name">Alan Black</h3>
                         <p class="team__pos" lang="en">Extreme Barber</p>
                         <ul class="socials list">
-                            <li class="socials__item"><a class="socials__link" href="">instagram</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">twitter</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">facebook</a></li>
-                            <li class="socials__item"><a class="socials__link" href="">linkedin</a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#instagram1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#twitter1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#facebook1"></use>
+                                    </svg></a></li>
+                            <li class="socials__item"><a class="socials__link" href=""><svg class="socials__icon">
+                                        <use href="./sprite.svg#linkedin1"></use>
+                                    </svg></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -227,9 +258,10 @@
         <!-- Секция Галерея-->
         <section class="gallery section">
             <div class="container">
-                <p class="uppertitle uppertitle--mode-light">На латинском языке “барба” означает “борода”</p>
+                <p class="uppertitle gallery__uppertitle uppertitle--mode-light">На латинском языке “барба” означает
+                    “борода”</p>
 
-                <h2 visually-hidden>Галерея</h2>
+                <h2 class="visually-hidden">Галерея</h2>
 
                 <ul class="gallery__list list">
                     <li class="gallery__item"><img class="gallery__image" src="./images/Rectangle25.jpg" alt=""
@@ -247,13 +279,12 @@
         <!-- Секция Контакты -->
         <section class="contacts section">
             <div class="container">
-                <h2 class="title title--mode-dark">Контакты</h2>
+                <h2 class="title contacts__title title--mode-dark">Контакты</h2>
 
                 <ul class="contacts__list list">
                     <li class="contacts__item">
                         <address class="contacts__address">ул.
-                            Васильковая, 7А
-                            Киев, 08132</address>
+                            Васильковая, 7А<br>Киев, 08132</address>
                     </li>
                     <li class="contacts__item"><a class="contacts__link link" href="tel:+380441111111">+38 044 111 11
                             11</a>
@@ -273,7 +304,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="footer__container container">
             <p class="footer__text">&#169; Copyright 2020</p>
 
             <ul class="footer__list list">
